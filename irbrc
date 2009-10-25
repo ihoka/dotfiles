@@ -30,4 +30,7 @@ class Object
   end
 end
 
+require 'boson'
+Boson.start
+
 load '~/.railsrc' if ENV['RAILS_ENV']
