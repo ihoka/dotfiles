@@ -4,7 +4,8 @@
 :sources: 
 - http://gemcutter.org
 - http://gems.rubyforge.org
-gem: --no-rdoc --no-ri
+gem: --rdoc --no-ri
+rdoc: --inline-source --line-numbers --format=html --template=hanna
 :bulk_threshold: 1000
 :backtrace: false
 :benchmark: false
