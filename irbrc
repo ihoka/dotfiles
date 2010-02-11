@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+
 require 'irb/completion'
 require 'irb/ext/save-history'
 
@@ -30,6 +31,7 @@ class Object
   end
 end
 
+require 'rubygems'
 require 'boson'
 Boson.start
 

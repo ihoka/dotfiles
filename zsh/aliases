@@ -28,6 +28,7 @@ alias scaffold='script/generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 alias myst='/usr/local/share/mysql/mysql.server start'
+alias pgst='/usr/local/bin/pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
 # commands starting with % for pasting from web
 alias %=' '
