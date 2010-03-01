@@ -30,6 +30,8 @@ alias rst='touch tmp/restart.txt'
 alias myst='/usr/local/share/mysql/mysql.server start'
 alias pgst='/usr/local/bin/pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
+alias blink='c blinksale; rvm 1.8.7%blinksale'
+
 # commands starting with % for pasting from web
 alias %=' '
 
