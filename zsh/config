@@ -4,8 +4,9 @@ else
   export PS1='%3~$(git_info_for_prompt)%# '
 fi
 
+export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r6
 export EDITOR='mate -w'
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/opt/bin:$PATH"
+export PATH="~/bin:$ANDROID_SDK_ROOT/tools:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/opt/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 fpath=(~/.zsh/functions $fpath)

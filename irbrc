@@ -31,8 +31,4 @@ class Object
   end
 end
 
-require 'rubygems'
-require 'boson'
-Boson.start
-
 load '~/.railsrc' if ENV['RAILS_ENV']

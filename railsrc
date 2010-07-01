@@ -1,8 +1,5 @@
 #!/usr/bin/ruby
 
-require 'hirb'
-Hirb::View.enable
-
 def change_log(stream)
   ActiveRecord::Base.logger = Logger.new(stream)
   ActiveRecord::Base.clear_active_connections!

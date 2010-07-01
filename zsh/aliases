@@ -30,9 +30,11 @@ alias rst='touch tmp/restart.txt'
 alias myst='/usr/local/share/mysql/mysql.server start'
 alias pgst='/usr/local/bin/pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
-alias blink='c blinksale; rvm 1.8.7%blinksale'
 
 # commands starting with % for pasting from web
 alias %=' '
 
 alias mount_mac='/Volumes/Users/piki/bin/sshfs piki@Mac-Pro.local:/Volumes/Users/piki /Volumes/Users/Piki/Remotes/mac-pro -oauto_cache,reconnect,volname=MacPro'
+
+# emacs
+alias e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c -n'
