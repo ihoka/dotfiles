@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 require 'irb/completion'
 require 'irb/ext/save-history'
@@ -32,3 +32,7 @@ class Object
 end
 
 load '~/.railsrc' if ENV['RAILS_ENV']
+
+require 'rubygems'
+require 'interactive_editor' rescue nil
+
