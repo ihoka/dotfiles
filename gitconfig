@@ -1,0 +1,33 @@
+[merge]
+   tool = opendiff
+	conflictstyle = diff3
+
+[core]
+   excludesfile = /Users/piki/.gitignore
+	editor = mate -w
+
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+
+[color]
+  ui = auto
+  status = auto
+  branch = auto
+  diff = auto
+
+[user]
+	name = Istvan Hoka
+  email = istvan.hoka@gmail.com
+
+[apply]
+  whitespace = nowarn
+
+[github]
+	user = ihoka
+	token = 3f45b01c525e630455a0511a5bf17264
+[push]
+	default = tracking

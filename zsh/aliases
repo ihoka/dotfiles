@@ -29,14 +29,9 @@ alias tlog='tail -f log/development.log'
 alias scaffold='script/generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
-alias myst='/usr/local/share/mysql/mysql.server start'
-alias pgst='/usr/local/bin/pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-
 
 # commands starting with % for pasting from web
 alias %=' '
 
-alias mount_mac='/Volumes/Users/piki/bin/sshfs piki@Mac-Pro.local:/Volumes/Users/piki /Volumes/Users/Piki/Remotes/mac-pro -oauto_cache,reconnect,volname=MacPro'
-
-# emacs
-alias e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c -n'
+alias ysg='yard server --gems'
+alias ys='yard server -r'
