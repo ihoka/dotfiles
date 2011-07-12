@@ -1,10 +1,12 @@
 [merge]
-   tool = opendiff
+  tool = opendiff
 	conflictstyle = diff3
+	stat = true
 
 [core]
-   excludesfile = /Users/piki/.gitignore
+  excludesfile = /Users/piki/.gitignore
 	editor = mate -w
+	whitespace = trailing-space,space-before-tab
 
 [alias]
   st = status
@@ -14,20 +16,31 @@
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
 
 [color]
-  ui = auto
+	ui = auto
   status = auto
   branch = auto
   diff = auto
 
 [user]
 	name = Istvan Hoka
-  email = istvan.hoka@gmail.com
-
-[apply]
-  whitespace = nowarn
+	email = istvan.hoka@gmail.com
 
 [github]
 	user = ihoka
 	token = 3f45b01c525e630455a0511a5bf17264
+
+[apply]
+  whitespace = nowarn
+
 [push]
 	default = tracking
+
+[diff]
+	renames = copies
+	mnemonicprefix = true
+
+[branch]
+	autosetupmerge = true
+
+[difftool]
+	prompt = false

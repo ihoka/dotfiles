@@ -15,24 +15,15 @@ class Object
   def local_methods(obj = self)
     (obj.methods - obj.class.superclass.instance_methods).sort
   end
-  
-  # print documentation
-  #
-  #   ri 'Array#pop'
-  #   Array.ri
-  #   Array.ri :pop
-  #   arr.ri :pop
-  def ri(method = nil)
-    unless method && method =~ /^[A-Z]/ # if class isn't specified
-      klass = self.kind_of?(Class) ? name : self.class.name
-      method = [klass, method].compact.join('#')
-    end
-    puts `ri '#{method}'`
-  end
 end
 
 load '~/.railsrc' if ENV['RAILS_ENV']
 
-require 'rubygems'
-require 'interactive_editor' rescue nil
+require 'rubygems' unless defined? Gem
 
+require 'irbtools/configure'
+Irbtools.remove_library :wirb
+Irbtools.remove_library :fancy_irb
+Irbtools.add_library :wirb, :thread => -1 do Wirb.start end
+Irbtools.add_library :fancy_irb, :thread => -1 do FancyIrb.start end
+Irbtools.start
