@@ -23,7 +23,10 @@
 
 [user]
 	name = Istvan Hoka
-	email = istvan.hoka@gmail.com
+  email = istvan.hoka@gmail.com
+
+[apply]
+  whitespace = nowarn
 
 [github]
 	user = ihoka
