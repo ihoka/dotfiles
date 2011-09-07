@@ -7,7 +7,7 @@ fi
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r6
 export EDITOR='mate -w'
 export PATH="~/bin:/usr/local/share/npm/bin:$ANDROID_SDK_ROOT/tools:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/opt/bin:$PATH"
-export NODE_PATH="/usr/local/Cellar/npm/0.2.2/lib/node"
+export NODE_PATH="/usr/local/Cellar/node/0.4.8/lib/node"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 fpath=(~/.zsh/functions $fpath)
