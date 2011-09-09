@@ -20,10 +20,3 @@ end
 load '~/.railsrc' if ENV['RAILS_ENV']
 
 require 'rubygems' unless defined? Gem
-
-require 'irbtools/configure'
-Irbtools.remove_library :wirb
-Irbtools.remove_library :fancy_irb
-Irbtools.add_library :wirb, :thread => -1 do Wirb.start end
-Irbtools.add_library :fancy_irb, :thread => -1 do FancyIrb.start end
-Irbtools.start
