@@ -12,3 +12,9 @@ autocmd FileType ruby
       \ endif
 autocmd User Bundler
       \ if &makeprg !~ 'bundle' | setl makeprg^=bundle\ exec\  | endif
+
+" Include user's local vim config
+if filereadable(expand("~/.vimoutlinerrc"))
+  source ~/.vimoutlinerrc
+endif
+
