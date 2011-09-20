@@ -36,3 +36,6 @@ alias %=' '
 
 alias ysg='yard server --gems'
 alias ys='yard server -r'
+
+export TODOTXT_DEFAULT_ACTION=ls
+alias t='todo.sh -d /Volumes/Users/piki/todo.cfg'
