@@ -20,3 +20,8 @@ end
 load '~/.railsrc' if ENV['RAILS_ENV']
 
 require 'rubygems' unless defined? Gem
+
+begin
+  require 'pry'
+rescue LoadError
+end

@@ -4,7 +4,7 @@
 	stat = true
 
 [core]
-  excludesfile = /Users/piki/.gitignore
+	excludesfile = ~/.gitignore
 	editor = mate -w
 	whitespace = trailing-space,space-before-tab
 
@@ -23,7 +23,7 @@
 
 [user]
 	name = Istvan Hoka
-  email = istvan.hoka@gmail.com
+	email = istvan.hoka@gmail.com
 
 [apply]
   whitespace = nowarn
