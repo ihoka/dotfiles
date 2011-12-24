@@ -34,8 +34,5 @@ alias rstd='touch tmp/debug.txt; touch tmp/restart.txt'
 # commands starting with % for pasting from web
 alias %=' '
 
-alias ysg='yard server --gems'
-alias ys='yard server -r'
-
-export TODOTXT_DEFAULT_ACTION=ls
-alias t='todo.sh -d /Volumes/Users/piki/todo.cfg'
+alias tm1='rm "$HOME/Library/Application Support/TextMate"; ln -s "$HOME/Dropbox/Library/Application Support/TextMate-1" "$HOME/Library/Application Support/TextMate"; rm /usr/local/bin/mate; ln -s /usr/local/bin/mate-1 /usr/local/bin/mate'
+alias tm2='rm "$HOME/Library/Application Support/TextMate"; ln -s "$HOME/Dropbox/Library/Application Support/TextMate-2" "$HOME/Library/Application Support/TextMate"; rm /usr/local/bin/mate; ln -s /usr/local/bin/mate-2 /usr/local/bin/mate'
