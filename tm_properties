@@ -32,11 +32,11 @@ TM_RUBY = "$HOME/.rvm/bin/textmate_ruby"
 softWrap         = false
 softTabs         = true
 tabSize          = 4
+showInvisibles   = true
 
 # File type specific configuration
 #
 [ text ]
-showInvisibles   = true
 
 [ .git/COMMIT_EDITMSG ]
 spellChecking    = true
