@@ -2,6 +2,7 @@
 .svn
 *~
 .bundle
+bundler_stubs/
 db/*.sqlite3
 log/*.log
 tmp/
