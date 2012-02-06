@@ -26,9 +26,9 @@ Pry.config.prompt = [
 ]
 
 # tell Readline when the window resizes
-old_winch = trap 'WINCH' do
-  if `stty size` =~ /\A(\d+) (\d+)\n\z/
-    Readline.set_screen_size $1.to_i, $2.to_i
-  end
-  old_winch.call unless old_winch.nil?
-end
+# old_winch = trap 'WINCH' do
+#   if `stty size` =~ /\A(\d+) (\d+)\n\z/
+#     Readline.set_screen_size $1.to_i, $2.to_i
+#   end
+#   old_winch.call unless old_winch.nil?
+# end
