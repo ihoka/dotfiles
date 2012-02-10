@@ -1,5 +1,2 @@
 " let mapleader=","
 
-let g:ruby_debugger_cucumber_path = "./bundler_stubs/cucumber"
-let g:ruby_debugger_spec_path = "./bundler_stubs/rspec"
-

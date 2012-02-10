@@ -6,3 +6,9 @@ set guifont=Inconsolata:h18
 colorscheme Railscasts
 
 let g:ruby_debugger_progname = 'mvim'
+let g:ruby_debugger_cucumber_path = "./bundler_stubs/cucumber"
+let g:ruby_debugger_spec_path = "./bundler_stubs/rspec"
+
+let ruby_fold=1
+set foldlevelstart=99
+
