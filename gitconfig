@@ -47,3 +47,5 @@
 
 [difftool]
 	prompt = false
+[gist]
+	private = yes
