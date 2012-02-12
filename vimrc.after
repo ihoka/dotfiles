@@ -6,3 +6,6 @@ set guifont=Inconsolata:h18
 colorscheme Railscasts
 
 let g:ruby_debugger_progname = 'mvim'
+
+command! FR set filetype=ruby
+
