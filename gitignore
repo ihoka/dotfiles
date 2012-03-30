@@ -3,6 +3,7 @@
 *.sassc
 *~
 .bundle
+.DS_Store
 bundler_stubs/
 db/*.sqlite3
 log/*.log
