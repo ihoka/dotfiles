@@ -3,7 +3,8 @@ if has("gui_running")
 endif
 
 set guifont=Inconsolata:h18
-colorscheme Railscasts
+set background=light
+colorscheme solarized
 
 let g:ruby_debugger_progname = 'mvim'
 let g:ruby_debugger_cucumber_path = "./bundler_stubs/cucumber"
