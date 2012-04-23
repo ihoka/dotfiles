@@ -2,9 +2,8 @@ if has("gui_running")
   set guioptions-=T
 endif
 
-set guifont=Inconsolata:h18
-set background=light
-colorscheme solarized
+set guifont=Monaco:h16
+color molokai
 
 let g:ruby_debugger_progname = 'mvim'
 let g:ruby_debugger_cucumber_path = "./bundler_stubs/cucumber"
