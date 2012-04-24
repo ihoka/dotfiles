@@ -2,7 +2,7 @@ if has("gui_running")
   set guioptions-=T
 endif
 
-set guifont=Monaco:h16
+set guifont=Monaco:h14
 color molokai
 
 let g:ruby_debugger_progname = 'mvim'
@@ -15,5 +15,8 @@ set foldlevelstart=99
 command! FR set filetype=ruby
 
 " Leader mappings
-nmap <Leader>vi :tabe ~/.vimrc.after
+nmap <Leader>vi :tabe ~/.vimrc.after<CR>
+
+" Enable folding CoffeeScript
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
