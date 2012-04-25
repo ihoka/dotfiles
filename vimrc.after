@@ -20,3 +20,6 @@ nmap <Leader>vi :tabe ~/.vimrc.after<CR>
 " Enable folding CoffeeScript
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
+" Prevent Vroom from using colors
+let g:vroom_use_colors = 0
+
