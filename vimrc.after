@@ -1,10 +1,13 @@
+" Hide toolbar
 if has("gui_running")
   set guioptions-=T
 endif
 
+" Font and theme
 set guifont=Monaco:h14
 color molokai
 
+" Ruby debugger settings
 let g:ruby_debugger_progname = 'mvim'
 let g:ruby_debugger_cucumber_path = "./bundler_stubs/cucumber"
 let g:ruby_debugger_spec_path = "./bundler_stubs/rspec"
@@ -22,4 +25,32 @@ au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 " Prevent Vroom from using colors
 let g:vroom_use_colors = 0
+
+" Include local vim outliner config
+if filereadable(expand("~/.vimoutlinerrc"))
+  source ~/.vimoutlinerrc
+endif
+
+" Tabularize
+if exists(":Tabularize")
+  nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
+  vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
+  nmap <Leader>a= :Tabularize /=<CR>
+  vmap <Leader>a= :Tabularize /=<CR>
+  nmap <Leader>a: :Tabularize /:\zs<CR>
+  vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
+
+inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+
+function! s:align()
+  let p = '^\s*|\s.*\s|\s*$'
+  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+    Tabularize/|/l1
+    normal! 0
+    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+  endif
+endfunction
 
