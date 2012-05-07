@@ -17,6 +17,9 @@ set foldlevelstart=99
 
 command! FR set filetype=ruby
 
+" Key mappings
+nmap <d-r> <Esc>:NERDTreeFind<CR>
+
 " Leader mappings
 nmap <Leader>vi :tabe ~/.vimrc.after<CR>
 
@@ -79,3 +82,13 @@ if !exists("*OpenURI")
 endif
 map <Leader>w :call OpenURI()<CR>
 
+" Automatically reload vimrc on save
+function! UpdateVimRC()
+     for server in split(serverlist())
+         call remote_send(server, '<Esc>:source $HOME/.vimrc.after<CR>')
+     endfor
+ endfunction
+ augroup myvimrchooks
+ au!
+    autocmd bufwritepost .vimrc.after call UpdateVimRC()
+ augroup END
