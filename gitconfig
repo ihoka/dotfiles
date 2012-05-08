@@ -5,7 +5,7 @@
 
 [core]
 	excludesfile = ~/.gitignore
-	editor = mate -w
+	editor = "mvim -f -c \"au VimLeave * !open -a iTerm\""
 	whitespace = trailing-space,space-before-tab
 
 [alias]
