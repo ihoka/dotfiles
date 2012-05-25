@@ -1,9 +1,0 @@
-savepath
-osascript >/dev/null <<EOF
-tell application "iTerm"
-  activate
-  tell the first terminal
-    launch session "Default"
-  end tell
-end tell
-EOF

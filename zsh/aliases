@@ -1,41 +1,8 @@
-# cd
-alias ..='cd ..'
-
 # ls
 alias ls="ls -F"
 alias l="ls -lAh"
 alias ll="ls -l"
 alias la='ls -A'
 
-# git
-alias gl='git pull'
-alias gp='git push'
-alias gd='git diff'
-alias gc='git commit'
-alias gca='git commit -a'
-alias gco='git checkout'
-alias gb='git branch'
-alias gs='git status'
-alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
-
-# rails
-alias sc='script/console'
-alias ss='script/server'
-alias sg='script/generate'
-alias a='AUTOFEATURE=true autospec'
-alias b='bundle exec'
-alias bo='bundle open'
-alias bi='bundle install --binstubs=./bundler_stubs'
-alias cuke='bundle exec cucumber'
-alias tlog='tail -f log/development.log'
-alias migrate='rake db:migrate db:test:clone'
-alias rst='touch tmp/restart.txt'
-alias rstd='touch tmp/debug.txt; touch tmp/restart.txt'
-
 # commands starting with % for pasting from web
 alias %=' '
-
-alias tm1='rm "$HOME/Library/Application Support/TextMate"; ln -s "$HOME/Dropbox/Library/Application Support/TextMate-1" "$HOME/Library/Application Support/TextMate"; rm /usr/local/bin/mate; ln -s /usr/local/bin/mate-1 /usr/local/bin/mate'
-alias tm2='rm "$HOME/Library/Application Support/TextMate"; ln -s "$HOME/Dropbox/Library/Application Support/TextMate-2" "$HOME/Library/Application Support/TextMate"; rm /usr/local/bin/mate; ln -s /usr/local/bin/mate-2 /usr/local/bin/mate'
-
-alias t='task'
