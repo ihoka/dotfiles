@@ -9,4 +9,3 @@ gem: --no-rdoc --no-ri
 :backtrace: false
 :bulk_threshold: 1000
 rdoc: --inline-source --line-numbers --format=html --template=hanna
-custom_shebang: $env ruby_bundler_wrapper
