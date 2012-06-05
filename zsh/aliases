@@ -6,3 +6,6 @@ alias la='ls -A'
 
 # commands starting with % for pasting from web
 alias %=' '
+
+alias bi='bundle install --binstubs=./bundler_stubs'
+
