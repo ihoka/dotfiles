@@ -17,6 +17,9 @@ set foldlevelstart=99
 
 command! FR set filetype=ruby
 
+" Slime vim
+let g:slime_target = "tmux"
+
 " Key mappings
 nmap <d-r> <Esc>:NERDTreeFind<CR>
 
