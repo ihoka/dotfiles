@@ -8,4 +8,6 @@ alias la='ls -A'
 alias %=' '
 
 alias bi='bundle install --binstubs=./bundler_stubs'
+alias bo='bundle open'
 
+alias zcat='gunzip -c'
