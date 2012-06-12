@@ -44,3 +44,5 @@ source ~/.profile
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+# Emacs mode for zle
+bindkey -e
