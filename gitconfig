@@ -4,7 +4,7 @@
 	stat = true
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/piki/.gitignore
 	editor = "subl -w"
 	whitespace = trailing-space,space-before-tab
 
@@ -14,7 +14,7 @@
   co = checkout
   br = branch
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
-  di = diff
+  diff = diff --word-diff
   dc = diff --cached
   amend = commit --amend
   aa = add --all
@@ -71,3 +71,9 @@
 	prompt = false
 [gist]
 	private = yes
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
