@@ -1,12 +1,12 @@
 [merge]
-  tool = opendiff
-	conflictstyle = diff3
-	stat = true
+	tool = Kaleidoscope
+  conflictstyle = diff3
+  stat = true
 
 [core]
-	excludesfile = /Users/piki/.gitignore
-	editor = "subl -w"
-	whitespace = trailing-space,space-before-tab
+  excludesfile = /Users/piki/.gitignore
+  editor = "subl -w"
+  whitespace = trailing-space,space-before-tab
 
 [alias]
   st = status
@@ -36,44 +36,50 @@
   b = branch
   ds = diff --stat=160,120
   dh1 = diff HEAD~1
+	undo-commit = reset --soft HEAD^
+	up = "!git remote update -p; git merge --ff-only @{u}"
 
 [color]
-	ui = auto
+  ui = auto
   status = auto
   branch = auto
   diff = auto
 
 [user]
-	name = Istvan Hoka
-	email = istvan.hoka@gmail.com
+  name = Istvan Hoka
+  email = istvan.hoka@gmail.com
 
 [apply]
   whitespace = nowarn
 
 [github]
-	user = ihoka
-	token = 3f45b01c525e630455a0511a5bf17264
+  user = ihoka
+  token = 3f45b01c525e630455a0511a5bf17264
 
 [apply]
   whitespace = nowarn
 
 [push]
-	default = tracking
+	default = simple
 
 [diff]
-	renames = copies
-	mnemonicprefix = true
+  renames = copies
+  mnemonicprefix = true
+	tool = Kaleidoscope
 
 [branch]
 	autosetupmerge = true
+	autosetuprebase = always
 
 [difftool]
 	prompt = false
+
 [gist]
-	private = yes
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  private = yes
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
+[mergetool]
+	prompt = false

@@ -26,12 +26,12 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github git-flow rails3 ruby osx brew cap rake redis-cli rvm pow powder vagrant node npm zeus sublime taskwarrior)
+plugins=(bundler git ruby osx brew cap rake redis-cli rvm pow powder vagrant node npm zeus sublime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -44,10 +44,13 @@ source ~/.profile
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && .  ~/.localrc
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 # Emacs mode for zle
 bindkey -e
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$PATH:/usr/local/heroku/bin"
+
+# Disable autocorrect
+unsetopt correct_all
+
+ulimit -S -n 2048

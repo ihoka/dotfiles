@@ -1,0 +1,2 @@
+rvm_codesign_identity=Developer
+export rvm_max_time_flag=20

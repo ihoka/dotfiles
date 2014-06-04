@@ -1,12 +1,14 @@
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r21
 export EDITOR="subl -w"
 export BUNDLER_EDITOR="subl"
-export PATH="~/bin:~/usr/AWS-ElasticBeanstalk-CLI-2.2/api/bin:/usr/local/share/python:/usr/local/share/npm/bin:$ANDROID_SDK_ROOT/tools:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/opt/bin:$PATH"
+export GOPATH=/Users/piki/Projects/go
+export PATH="~/.dotfiles/bin:$GOPATH/bin:~/usr/AWS-ElasticBeanstalk-CLI-2.2/api/bin:/usr/local/share/python:/usr/local/share/npm/bin:$ANDROID_SDK_ROOT/tools:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/opt/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export LC_CTYPE=en_US.UTF-8
 export COMMAND_MODE=unix2003
 export AWS_CREDENTIAL_FILE=/Users/piki/.elasticbeanstalk/aws_credential_file
+export PIVOTAL_TRACKER_TOKEN=62a715cc356c549aa9c56a5e0bb131be
 
 fpath=(~/.zsh/functions $fpath)
 

@@ -26,3 +26,5 @@ log/*.log
 pickle-email-*.html
 rerun.txt
 tmp/
+*.sublime-project
+*.sublime-workspace
