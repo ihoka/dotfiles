@@ -12,10 +12,22 @@ alias bo='bundle open'
 
 alias zcat='gunzip -c'
 
-alias t='task'
-
 alias g='grep'
 
 alias gist='/usr/local/bin/gist -p -s -c'
 
 alias fixow='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo "Open With has been rebuilt, Finder will relaunch"'
+
+alias ey="rbenv shell 2.3.8; ey"
+
+alias prspec='parallel_rspec -n 3 --'
+
+alias nom='rm -rf node_modules && mkdir node_modules && touch node_modules/.metadata_never_index && a=`npm get progress` && npm set progress=false && npm install && npm set progress=$a'
+alias nom-cache='npm cache clean && nom'
+
+alias bom='rm -rf bower_components && mkdir bower_components && touch bower_components/.metadata_never_index && bower install'
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
+alias noths-ssm="aws --profile noths-qa ssm start-session --target"
+
+alias jest='nocorrect jest'

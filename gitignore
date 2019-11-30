@@ -28,3 +28,7 @@ rerun.txt
 tmp/
 *.sublime-project
 *.sublime-workspace
+ihoka.sh
+.classpath
+.project
+.settings

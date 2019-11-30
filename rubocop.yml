@@ -1,0 +1,51 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - 'frontend/**/*'
+    - 'db/**/*'
+    - '**/config.ru'
+    - '**/Gemfile'
+    - '**/Rakefile'
+    - 'bin/**/*'
+    - 'bundler_stubs/**/*'
+    - 'cookbooks/**/*'
+Metrics/AbcSize:
+  Max: 40
+Metrics/MethodLength:
+  Max: 20
+Metrics/ClassLength:
+  Max: 120
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+Metrics/LineLength:
+  Enabled: false
+Layout/AlignParameters:
+  EnforcedStyle: with_first_parameter
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/HashSyntax:
+  EnforcedStyle: ruby19
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+  SupportedStyles:
+    - normal
+    - rails
+Layout/ExtraSpacing:
+  AllowForAlignment: true
+  ForceEqualSignAlignment: false
+Layout/SpaceAroundOperators:
+  AllowForAlignment: true
+Rails:
+  Enabled: true
+Metrics/BlockLength:
+  Enabled: false
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*'
+Rails/SkipsModelValidations:
+  Enabled: False
