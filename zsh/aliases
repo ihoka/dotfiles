@@ -18,7 +18,7 @@ alias gist='/usr/local/bin/gist -p -s -c'
 
 alias fixow='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo "Open With has been rebuilt, Finder will relaunch"'
 
-alias ey="rbenv shell 2.3.8; ey"
+alias ey="rbenv shell 2.6.6; ey"
 
 alias prspec='parallel_rspec -n 3 --'
 

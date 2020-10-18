@@ -15,12 +15,12 @@ Metrics/MethodLength:
   Max: 20
 Metrics/ClassLength:
   Max: 120
-Layout/AlignHash:
+Layout/HashAlignment:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
 Metrics/LineLength:
   Enabled: false
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   EnforcedStyle: with_first_parameter
 Style/ClassAndModuleChildren:
   Enabled: false
@@ -47,5 +47,3 @@ Metrics/BlockLength:
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - 'spec/**/*'
-Rails/SkipsModelValidations:
-  Enabled: False
