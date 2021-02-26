@@ -40,6 +40,7 @@
   undo-commit = reset --soft HEAD^
   up = "!git pull --rebase --prune $@"
   cleanup = "!git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done"
+	pushfwl = push --force-with-lease
 
 [color]
   ui = auto
