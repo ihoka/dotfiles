@@ -14,7 +14,11 @@ export SLACK_TOKEN=xoxp-2187915557-2187915561-7907740577-2b78e4
 export HOMEBREW_GITHUB_API_TOKEN=cc2934fb9c980f169bfbfa5e00316323e68d4970
 export npm_config_loglevel=error
 export NPM_TOKEN=954b7b0c-79f4-4b90-a8be-802258ced68f
-export GITHUB_TOKEN=5a6c3f5689f7ae42a7801bdb67cc8b1b97701a1f
+
+# aws-scripts
+export PATH="$PATH:$HOME/aws-scripts"
+export AWS_PROFILE_ALIASES=true
+source $HOME/aws-scripts/aws-profile-function.sh
 
 fpath=(~/.zsh/functions $fpath)
 

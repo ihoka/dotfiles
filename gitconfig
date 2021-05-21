@@ -41,6 +41,7 @@
   up = "!git pull --rebase --prune $@"
   cleanup = "!git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done"
 	pushfwl = push --force-with-lease
+	recent = branch --sort=-committerdate --format=\"%(committerdate:relative)%09%(refname:short)\"
 
 [color]
   ui = auto
