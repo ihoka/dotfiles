@@ -63,7 +63,7 @@ export DISABLE_SPRING=1
 
 RPROMPT='[%?]'
 
-source /Users/ihoka/.iterm2_shell_integration.zsh
+source $HOME/.iterm2_shell_integration.zsh
 
 autoload -U add-zsh-hook
 
@@ -73,8 +73,8 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 export MAVEN_OPTS="-Djavax.net.ssl.trustStore=$HOME/.m2/keystore.pks -Djavax.net.ssl.trustStorePassword=nothsnoths"
 
-export SDKMAN_DIR="/Users/ihoka/.sdkman"
-[[ -s "/Users/ihoka/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/ihoka/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
@@ -83,3 +83,8 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 eval "$(starship init zsh)"
 
 eval "$(saml2aws --completion-script-zsh)"
+
+# aws-scripts
+export PATH="$PATH:$HOME/aws-scripts"
+export AWS_PROFILE_ALIASES=true
+source $HOME/aws-scripts/aws-profile-function.sh
