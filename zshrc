@@ -88,3 +88,5 @@ eval "$(saml2aws --completion-script-zsh)"
 export PATH="$PATH:$HOME/aws-scripts"
 export AWS_PROFILE_ALIASES=true
 source $HOME/aws-scripts/aws-profile-function.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -1,7 +1,7 @@
 # ls
 alias ls="ls -F"
-alias l="ls -lAh"
-alias ll="ls -l"
+alias l="exa --git -l"
+alias ll="exa -l"
 alias la='ls -A'
 
 # commands starting with % for pasting from web
