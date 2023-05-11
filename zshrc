@@ -1,11 +1,11 @@
+#!/usr/bin/env bash
+#
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
-#!/usr/bin/env bash
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -90,11 +90,6 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 eval "$(saml2aws --completion-script-zsh)"
 
-# aws-scripts
-export PATH="$PATH:$HOME/aws-scripts"
-export AWS_PROFILE_ALIASES=true
-source $HOME/aws-scripts/aws-profile-function.sh
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -102,3 +97,7 @@ source $HOME/aws-scripts/aws-profile-function.sh
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+export PATH="./bin:$PATH"
+
+eval "$(shadowenv init zsh)"

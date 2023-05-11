@@ -1,14 +1,15 @@
 # ls
-alias ls="ls -F"
+alias ls="exa"
 alias l="exa --git -l"
 alias ll="exa -l"
-alias la='ls -A'
+alias la="exa --long --all --group"
 
 # commands starting with % for pasting from web
 alias %=' '
 
 alias bi='bundle install'
 alias bo='bundle open'
+alias be='bundle exec'
 
 alias zcat='gunzip -c'
 
@@ -25,7 +26,5 @@ alias nom-cache='npm cache clean && nom'
 
 alias bom='rm -rf bower_components && mkdir bower_components && touch bower_components/.metadata_never_index && bower install'
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-
-alias noths-ssm="aws --profile noths-qa ssm start-session --target"
 
 alias jest='nocorrect jest'
