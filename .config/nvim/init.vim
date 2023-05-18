@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'ggandor/lightspeed.nvim'
-Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 Plug 'terryma/vim-expand-region'
 
 hi LightspeedCursor gui=reverse
