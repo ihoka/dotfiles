@@ -74,8 +74,6 @@ source $HOME/.iterm2_shell_integration.zsh
 
 autoload -U add-zsh-hook
 
-eval "$(direnv hook zsh)"
-
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 export MAVEN_OPTS="-Djavax.net.ssl.trustStore=$HOME/.m2/keystore.pks -Djavax.net.ssl.trustStorePassword=nothsnoths"
@@ -88,15 +86,16 @@ eval "$(rbenv init -)"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
-eval "$(saml2aws --completion-script-zsh)"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+if [[ -d "$PYENV_ROOT" ]]; then
+  command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
 
 export PATH="./bin:$PATH"
 

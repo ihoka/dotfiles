@@ -95,3 +95,5 @@
 	template = $HOME/.stCommitMsg
 [init]
 	defaultBranch = main
+[credential]
+	helper = osxkeychain
