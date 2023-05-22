@@ -38,7 +38,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git macos brew rake redis-cli node npm heroku zsh-navigation-tools vscode docker gem github aws rbenv ruby yarn npm)
+plugins=(asdf git macos brew rake redis-cli node npm heroku zsh-navigation-tools vscode docker gem github aws rbenv ruby yarn npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,8 +81,11 @@ export MAVEN_OPTS="-Djavax.net.ssl.trustStore=$HOME/.m2/keystore.pks -Djavax.net
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if type rbenv &> /dev/null; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
+
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
