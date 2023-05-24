@@ -86,6 +86,10 @@ if type rbenv &> /dev/null; then
   eval "$(rbenv init -)"
 fi
 
+if type direnv &> /dev/null; then
+  eval "$(direnv hook zsh)"
+fi
+
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
