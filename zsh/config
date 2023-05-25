@@ -1,4 +1,3 @@
-export AWS_EB_CLI_HOME=$HOME/Library/AWS-ElasticBeanstalk-CLI-2.6.4
 export EDITOR="code -n -w"
 export BUNDLER_EDITOR="code -n"
 export GOPATH=$HOME/Projects/go
@@ -9,7 +8,6 @@ export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export LC_CTYPE=en_US.UTF-8
 export COMMAND_MODE=unix2003
 export AWS_CREDENTIAL_FILE=$HOME/.elasticbeanstalk/aws_credential_file
-export SLACK_TOKEN=xoxp-2187915557-2187915561-7907740577-2b78e4
 export HOMEBREW_GITHUB_API_TOKEN=cc2934fb9c980f169bfbfa5e00316323e68d4970
 export HOMEBREW_NO_GOOGLE_ANALYTICS=1
 export npm_config_loglevel=error
