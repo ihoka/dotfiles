@@ -4,7 +4,7 @@
   stat = true
 
 [core]
-	excludesfile = $HOME/.gitignore
+	excludesFile = ~/.gitignore
 	editor = code --wait
   whitespace = trailing-space,space-before-tab
   # pager = diff-so-fancy | less --tabs=1,5 -R

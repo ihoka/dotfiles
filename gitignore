@@ -32,3 +32,4 @@ ihoka.sh
 .classpath
 .project
 .settings
+.env
