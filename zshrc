@@ -42,7 +42,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(asdf git macos brew rake redis-cli node npm zsh-navigation-tools vscode docker gem ruby yarn)
-plugins=()
+plugins=(asdf git)
 
 source $ZSH/oh-my-zsh.sh
 
