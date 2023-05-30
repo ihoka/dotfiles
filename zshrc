@@ -38,7 +38,7 @@ alias dotfiles="code ~/.dotfiles"
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
 
-FZF_DEFAULT_COMMAND="rg"
+FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
