@@ -33,3 +33,4 @@ ihoka.sh
 .project
 .settings
 .env
+*.code-workspace
