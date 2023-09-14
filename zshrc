@@ -44,7 +44,7 @@ FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(asdf git macos brew rake redis-cli node npm zsh-navigation-tools vscode docker gem ruby yarn)
-plugins=(asdf git fzf)
+plugins=(asdf git fzf kube-ps1)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,3 +114,9 @@ fi
 export PATH="./bin:$PATH"
 
 eval "$(shadowenv init zsh)"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/ihoka/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+RPROMPT='$(kube_ps1)'
