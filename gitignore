@@ -34,3 +34,5 @@ ihoka.sh
 .settings
 .env
 *.code-workspace
+.envrc
+.kubeconfig.yml
