@@ -59,8 +59,8 @@ nmap gt :tabnext
 exmap tabprev obcommand cycle-through-panes:cycle-through-panes-reverse
 nmap gT :tabprev
 
-exmap nextHeading jsfile mdHelpers.js {jumpHeading(true)}
-exmap prevHeading jsfile mdHelpers.js {jumpHeading(false)}
+exmap nextHeading jsfile Scripts/mdHelpers.js {jumpHeading(true)}
+exmap prevHeading jsfile Scripts/mdHelpers.js {jumpHeading(false)}
 nmap ]] :nextHeading
 nmap [[ :prevHeading
 
