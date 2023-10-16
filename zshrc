@@ -60,11 +60,6 @@ source ~/.profile
 # Emacs mode for zle
 bindkey -e
 
-### Added by the Heroku Toolbelt
-export PATH="$PATH:/usr/local/heroku/bin"
-
-export PATH="$HOME/.yarn/bin:$PATH"
-
 # Disable autocorrect
 unsetopt correct_all
 
@@ -80,10 +75,6 @@ RPROMPT='[%?]'
 # source $HOME/.iterm2_shell_integration.zsh
 
 autoload -U add-zsh-hook
-
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-
-export MAVEN_OPTS="-Djavax.net.ssl.trustStore=$HOME/.m2/keystore.pks -Djavax.net.ssl.trustStorePassword=nothsnoths"
 
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -111,10 +102,6 @@ if [[ -d "$PYENV_ROOT" ]]; then
   eval "$(pyenv init -)"
 fi
 
-export PATH="./bin:$PATH"
+export PATH="./bin:$HOME/bin:$PATH"
 
 eval "$(shadowenv init zsh)"
-
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/ihoka/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
