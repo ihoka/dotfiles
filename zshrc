@@ -71,9 +71,6 @@ export DISABLE_SPRING=1
 
 RPROMPT='[%?]'
 
-# This makes loading the shell slow.
-# source $HOME/.iterm2_shell_integration.zsh
-
 autoload -U add-zsh-hook
 
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -88,9 +85,6 @@ if type direnv &> /dev/null; then
   eval "$(direnv hook zsh)"
 fi
 
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -103,5 +97,3 @@ if [[ -d "$PYENV_ROOT" ]]; then
 fi
 
 export PATH="./bin:$HOME/bin:$PATH"
-
-eval "$(shadowenv init zsh)"
