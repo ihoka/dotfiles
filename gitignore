@@ -37,3 +37,4 @@ ihoka.sh
 .envrc
 .kubeconfig.yml
 .kube/config
+coverage
