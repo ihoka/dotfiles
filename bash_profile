@@ -1,2 +1,2 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
-. "$HOME/.asdf/asdf.sh"
+. "/usr/local/opt/asdf/libexec/asdf.sh"
