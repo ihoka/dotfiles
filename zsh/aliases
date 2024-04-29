@@ -28,3 +28,4 @@ alias bom='rm -rf bower_components && mkdir bower_components && touch bower_comp
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 alias jest='nocorrect jest'
+alias gcl="gitlab-ci-local"
