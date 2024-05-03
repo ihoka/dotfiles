@@ -81,8 +81,6 @@ if type direnv &> /dev/null; then
   eval "$(direnv hook zsh)"
 fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 export PYENV_ROOT="$HOME/.pyenv"
 if [[ -d "$PYENV_ROOT" ]]; then
   command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
