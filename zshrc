@@ -88,3 +88,5 @@ if [[ -d "$PYENV_ROOT" ]]; then
 fi
 
 export PATH="./bin:$HOME/bin:$PATH"
+
+source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
