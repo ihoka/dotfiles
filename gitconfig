@@ -1,13 +1,19 @@
 [merge]
-  tool = opendiff
   conflictstyle = diff3
-  stat = true
 
 [core]
 	excludesFile = ~/.gitignore
 	editor = code --wait
   whitespace = trailing-space,space-before-tab
-  # pager = diff-so-fancy | less --tabs=1,5 -R
+  pager = delta
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true
+  line-numbers = true
+  side-by-side = true
 
 [alias]
   aa = add --all
@@ -67,9 +73,7 @@
 	default = simple
 
 [diff]
-  tool = opendiff
-  renames = copies
-  mnemonicprefix = true
+  colorMoved = default
 
 [branch]
   autosetupmerge = true
@@ -80,8 +84,7 @@
 
 [gist]
   private = yes
-[mergetool]
-  prompt = false
+
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
