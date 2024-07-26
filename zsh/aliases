@@ -1,8 +1,8 @@
 # ls
-alias ls="exa"
-alias l="exa --git -l"
-alias ll="exa -l"
-alias la="exa --long --all --group"
+alias ls="eza"
+alias l="eza --git -l"
+alias ll="eza -l"
+alias la="eza --long --all --group"
 
 # commands starting with % for pasting from web
 alias %=' '
