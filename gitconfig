@@ -72,15 +72,9 @@
 [push]
 	default = simple
 
-[diff]
-  colorMoved = default
-
 [branch]
   autosetupmerge = true
   autosetuprebase = always
-
-[difftool]
-  prompt = false
 
 [gist]
   private = yes
@@ -89,14 +83,32 @@
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 	trustExitCode = true
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
 	process = git-lfs filter-process
+
 [commit]
 	template = $HOME/.stCommitMsg
+
 [init]
 	defaultBranch = main
+
 [credential]
 	helper = osxkeychain
+
+[difftool]
+    # Run the difftool immediately, don't ask 'are you sure' each time.
+    prompt = false
+
+[pager]
+    # Use a pager if the difftool output is larger than one screenful,
+    # consistent with the behaviour of `git diff`.
+    difftool = true
+
+[diff]
+    # Set difftastic as the default difftool, so we don't need to specify
+    # `-t difftastic` every time.
+    tool = difftastic
