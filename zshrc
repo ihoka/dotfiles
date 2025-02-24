@@ -89,5 +89,7 @@ fi
 
 export PATH="./bin:$HOME/bin:$PATH"
 
+export ASDF_DATA_DIR="/Users/ihoka/.asdf"
+
 # source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
 # eval "$(/Users/ihoka/.local/bin/mise activate zsh)"
