@@ -40,7 +40,7 @@ FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(asdf git macos brew rake redis-cli node npm zsh-navigation-tools vscode docker gem ruby yarn)
-plugins=(asdf git fzf vscode docker gem ruby yarn)
+plugins=(git fzf vscode docker gem ruby yarn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,9 +87,5 @@ if [[ -d "$PYENV_ROOT" ]]; then
   eval "$(pyenv init -)"
 fi
 
-export PATH="./bin:$HOME/bin:$PATH"
-
-export ASDF_DATA_DIR="/Users/ihoka/.asdf"
-
-# source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
-# eval "$(/Users/ihoka/.local/bin/mise activate zsh)"
+echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
+eval "$(mise activate zsh)"
