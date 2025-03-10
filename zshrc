@@ -69,9 +69,6 @@ RPROMPT='[%?]'
 
 autoload -U add-zsh-hook
 
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 if type rbenv &> /dev/null; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
@@ -81,11 +78,4 @@ if type direnv &> /dev/null; then
   eval "$(direnv hook zsh)"
 fi
 
-export PYENV_ROOT="$HOME/.pyenv"
-if [[ -d "$PYENV_ROOT" ]]; then
-  command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-  eval "$(pyenv init -)"
-fi
-
-echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
 eval "$(mise activate zsh)"
