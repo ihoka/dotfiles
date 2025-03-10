@@ -39,3 +39,4 @@ ihoka.sh
 .kube/config
 coverage
 .data
+.mise.toml
