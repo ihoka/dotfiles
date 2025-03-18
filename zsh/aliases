@@ -3,6 +3,7 @@ alias ls="eza"
 alias l="eza --git -l"
 alias ll="eza -l"
 alias la="eza --long --all --group"
+alias mr="mise run"
 
 # commands starting with % for pasting from web
 alias %=' '
