@@ -79,3 +79,5 @@ if type direnv &> /dev/null; then
 fi
 
 eval "$(mise activate zsh)"
+
+export MISE_ENV="dev-local"
