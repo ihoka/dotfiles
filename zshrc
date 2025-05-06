@@ -44,10 +44,6 @@ plugins=(git fzf vscode docker gem ruby yarn)
 
 source $ZSH/oh-my-zsh.sh
 
-. ~/.zsh/config
-. ~/.zsh/aliases
-. ~/.zsh/completion
-
 source ~/.profile
 
 # use .localrc for settings specific to one system
@@ -81,3 +77,5 @@ fi
 eval "$(mise activate zsh)"
 
 export MISE_ENV="dev-local"
+
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
