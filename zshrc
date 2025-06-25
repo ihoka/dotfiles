@@ -74,7 +74,7 @@ if type direnv &> /dev/null; then
   eval "$(direnv hook zsh)"
 fi
 
-eval "$(mise activate zsh)"
+eval "$($HOME/.local/bin/mise activate zsh --shims)"
 
 export MISE_ENV="dev-local"
 
