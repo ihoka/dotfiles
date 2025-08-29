@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(mise:*)",
-      "Read(/Users/ihoka/**)"
+      "Read(/Users/ihoka/**)",
+      "WebFetch(domain:github.com)"
     ],
     "deny": [],
     "ask": []
