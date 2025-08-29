@@ -3,7 +3,9 @@
     "allow": [
       "Bash(mise:*)",
       "Read(/Users/ihoka/**)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(bun install:*)",
+      "Bash(bun:*)"
     ],
     "deny": [],
     "ask": []
