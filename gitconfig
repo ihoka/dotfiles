@@ -64,7 +64,6 @@
 
 [github]
   user = ihoka
-  token = 3f45b01c525e630455a0511a5bf17264
 
 [apply]
   whitespace = nowarn
