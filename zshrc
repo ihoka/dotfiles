@@ -74,8 +74,13 @@ if type direnv &> /dev/null; then
   eval "$(direnv hook zsh)"
 fi
 
-eval "$($HOME/.local/bin/mise activate zsh --shims)"
+eval "$(~/.local/bin/mise activate zsh)"
 
 export MISE_ENV="dev-local"
 
+# Custom aliases
+alias lg="lazygit"
+
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+
+eval "$(~/.local/try.rb init ~/src/tries)"
