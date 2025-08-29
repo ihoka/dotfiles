@@ -2,14 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(mise:*)",
-      "Read(/Users/ihoka/**)",
       "WebFetch(domain:github.com)",
       "Bash(bun install:*)",
       "Bash(bun:*)",
-      "Read(//Users/ihoka/.claude/**)",
       "Bash(source:*)",
       "Bash(claude-hooks:*)",
-      "Read(//Users/ihoka/.bun/bin/**)",
       "Bash(claudekit-hooks:*)"
     ],
     "deny": [],
