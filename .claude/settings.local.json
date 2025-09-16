@@ -5,7 +5,10 @@
       "Read(/Users/ihoka/**)",
       "WebFetch(domain:github.com)",
       "Bash(bun install:*)",
-      "Bash(bun:*)"
+      "Bash(bun:*)",
+      "Read(//Users/ihoka/.claude/**)",
+      "Bash(source:*)",
+      "Bash(claude-hooks:*)"
     ],
     "deny": [],
     "ask": []

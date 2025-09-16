@@ -85,6 +85,7 @@ export PATH="/Users/ihoka/.bun/bin:$PATH"
 alias lg="lazygit"
 alias claudekit="mise exec bun -- bun /Users/ihoka/.bun/bin/claudekit"
 alias ccexp="mise exec bun -- bun /Users/ihoka/.bun/bin/ccexp"
+alias claude-hooks="mise exec bun -- bun /Users/ihoka/.bun/bin/claude-hooks"
 
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
