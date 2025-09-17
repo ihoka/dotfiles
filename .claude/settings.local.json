@@ -8,7 +8,9 @@
       "Bash(bun:*)",
       "Read(//Users/ihoka/.claude/**)",
       "Bash(source:*)",
-      "Bash(claude-hooks:*)"
+      "Bash(claude-hooks:*)",
+      "Read(//Users/ihoka/.bun/bin/**)",
+      "Bash(claudekit-hooks:*)"
     ],
     "deny": [],
     "ask": []
