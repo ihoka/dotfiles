@@ -8,4 +8,3 @@
 *_ed25519
 secrets.yml
 credentials.yml.enc
-.claude/settings.local.json
