@@ -82,14 +82,11 @@ export PATH="/Users/ihoka/.bun/bin:$PATH"
 
 # Custom aliases
 alias lg="lazygit"
-alias claudekit="mise exec bun -- bun /Users/ihoka/.bun/bin/claudekit"
-alias ccexp="mise exec bun -- bun /Users/ihoka/.bun/bin/ccexp"
-alias ccflare="cd ~/src/ccflare && bun run ccflare"
-
-# Point Claude to your proxy
-export ANTHROPIC_BASE_URL="http://localhost:8080"
-
-export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+else
+  export SSH_AUTH_SOCK=~/.1password/agent.sock
+fi
 export GPG_TTY=$(tty)
 
 eval "$(~/.local/try.rb init ~/src/tries)"
