@@ -58,6 +58,7 @@
 [user]
 	name = Istvan Hoka
 	email = istvan.hoka@gmail.com
+	signingkey = /Users/ihoka/.ssh/1password.pub
 
 [apply]
   whitespace = nowarn
@@ -91,6 +92,7 @@
 
 [commit]
 	template = $HOME/.stCommitMsg
+	gpgsign = true
 
 [init]
 	defaultBranch = main
@@ -111,3 +113,7 @@
     # Set difftastic as the default difftool, so we don't need to specify
     # `-t difftastic` every time.
     tool = difftastic
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign

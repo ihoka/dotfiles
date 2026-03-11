@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 #
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -85,9 +84,22 @@ export PATH="/Users/ihoka/.bun/bin:$PATH"
 alias lg="lazygit"
 alias claudekit="mise exec bun -- bun /Users/ihoka/.bun/bin/claudekit"
 alias ccexp="mise exec bun -- bun /Users/ihoka/.bun/bin/ccexp"
-alias claude-hooks="mise exec bun -- bun /Users/ihoka/.bun/bin/claude-hooks"
+alias ccflare="cd ~/src/ccflare && bun run ccflare"
+
+# Point Claude to your proxy
+export ANTHROPIC_BASE_URL="http://localhost:8080"
 
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 export GPG_TTY=$(tty)
 
 eval "$(~/.local/try.rb init ~/src/tries)"
+
+# aws-scripts
+export PATH="$PATH:/Users/ihoka/aws-scripts"
+export AWS_PROFILE_ALIASES=true
+source /Users/ihoka/aws-scripts/aws-profile-function.sh
+
+alias claude-mem='bun "/Users/ihoka/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

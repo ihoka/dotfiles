@@ -4,3 +4,4 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 source ~/.orbstack/shell/init.bash 2>/dev/null || :
 
 eval "$(pkgx --shellcode)"  #docs.pkgx.sh/shellcode
+export PATH="$HOME/.local/bin:$PATH"

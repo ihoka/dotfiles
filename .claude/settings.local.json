@@ -3,11 +3,13 @@
     "allow": [
       "Bash(mise:*)",
       "WebFetch(domain:github.com)",
-      "Bash(bun install:*)",
       "Bash(bun:*)",
       "Bash(source:*)",
-      "Bash(claude-hooks:*)",
-      "Bash(claudekit-hooks:*)"
+      "Bash(ccflare:*)",
+      "Bash(which:*)",
+      "Bash(test:*)",
+      "Bash(echo:*)",
+      "Bash(stm:*)"
     ],
     "deny": [],
     "ask": []
