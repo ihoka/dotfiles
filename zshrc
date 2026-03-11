@@ -84,7 +84,7 @@ export PATH="/Users/ihoka/.bun/bin:$PATH"
 alias lg="lazygit"
 if [[ "$OSTYPE" == "darwin"* ]]; then
   export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
-else
+elif [[ -S ~/.1password/agent.sock ]]; then
   export SSH_AUTH_SOCK=~/.1password/agent.sock
 fi
 export GPG_TTY=$(tty)
