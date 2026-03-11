@@ -89,12 +89,12 @@ elif [[ -S ~/.1password/agent.sock ]]; then
 fi
 export GPG_TTY=$(tty)
 
-eval "$(~/.local/try.rb init ~/src/tries)"
+[[ -f ~/.local/try.rb ]] && eval "$(~/.local/try.rb init ~/src/tries)"
 
 # aws-scripts
 export PATH="$PATH:/Users/ihoka/aws-scripts"
 export AWS_PROFILE_ALIASES=true
-source /Users/ihoka/aws-scripts/aws-profile-function.sh
+[[ -f ~/aws-scripts/aws-profile-function.sh ]] && source ~/aws-scripts/aws-profile-function.sh
 
 alias claude-mem='bun "/Users/ihoka/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
 
